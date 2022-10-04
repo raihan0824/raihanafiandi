@@ -96,18 +96,18 @@
  * ## colors
  * ------------------------------------------------------------------- */
 :root {
-    /* color-1(#11ABB0)
+    /* color-2(#11ABB0)
      * color-2(#F06000)
      */
-    --color-1: hsla(182, 82%, 38%, 1);
+    --color-2: hsla(182, 82%, 38%, 1);
     --color-2: hsla(24, 100%, 47%, 1);
 
     /* theme color variations
      */
-    --color-1-lighter: hsla(182, 82%, 58%, 1);
-    --color-1-light  : hsla(182, 82%, 48%, 1);
-    --color-1-dark   : hsla(182, 82%, 28%, 1);
-    --color-1-darker : hsla(182, 82%, 18%, 1);
+    --color-2-lighter: hsla(182, 82%, 58%, 1);
+    --color-2-light  : hsla(182, 82%, 48%, 1);
+    --color-2-dark   : hsla(182, 82%, 28%, 1);
+    --color-2-darker : hsla(182, 82%, 18%, 1);
     --color-2-lighter: hsla(24, 100%, 67%, 1);
     --color-2-light  : hsla(24, 100%, 57%, 1);
     --color-2-dark   : hsla(24, 100%, 37%, 1);
@@ -166,7 +166,7 @@
     --color-btn-text              : var(--color-black);
     --color-btn-hover             : var(--color-black);
     --color-btn-hover-text        : var(--color-white);
-    --color-btn-primary           : var(--color-1);
+    --color-btn-primary           : var(--color-2);
     --color-btn-primary-text      : var(--color-white);
     --color-btn-primary-hover     : var(--color-2);
     --color-btn-primary-hover-text: var(--color-white);
@@ -1596,7 +1596,7 @@ body {
  * ## links
  * ------------------------------------------------------------------- */
 a {
-    color: var(--color-1);
+    color: var(--color-2);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -1908,7 +1908,7 @@ ul.disc li::before {
     width: var(--vspace-0_25);
     height: var(--vspace-0_25);
     border-radius: 50%;
-    background: var(--color-1-dark);
+    background: var(--color-2-dark);
     position: absolute;
     left: -.9em;
     top: .65em;
@@ -1917,7 +1917,7 @@ ul.disc li::before {
 
 dt {
     margin: 0;
-    color: var(--color-1);
+    color: var(--color-2);
 }
 
 dd {
@@ -2210,7 +2210,7 @@ input[type="password"]:focus,
 textarea:focus, 
 select:focus {
     color: var(--color-black);
-    border-bottom: 1px solid var(--color-1);
+    border-bottom: 1px solid var(--color-2);
 }
 
 label, legend {
@@ -2538,7 +2538,7 @@ input[type="button"].btn--primary:focus {
 }
 
 .stats-tabs li a:hover {
-    color: var(--color-1);
+    color: var(--color-2);
 }
 
 .stats-tabs li a em {
@@ -2944,7 +2944,7 @@ input[type="button"].btn--primary:focus {
     display: block;
     height: 2px;
     width: 100%;
-    background-color: var(--color-1);
+    background-color: var(--color-2);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -4135,8 +4135,8 @@ input[type="button"].btn--primary:focus {
 
 .modal-popup__details:hover, 
 .modal-popup__details:focus {
-    background-color: var(--color-1);
-    border-color: var(--color-1);
+    background-color: var(--color-2);
+    border-color: var(--color-2);
     color: white;
 }
 
@@ -4296,7 +4296,7 @@ input[type="button"].btn--primary:focus {
 }
 
 .s-testimonials .swiper-pagination-bullet-active {
-    background: var(--color-1);
+    background: var(--color-2);
     opacity: 1;
 }
 
@@ -4628,7 +4628,7 @@ input[type="button"].btn--primary:focus {
 
 .ss-go-top a:hover, 
 .ss-go-top a:focus {
-    background-color: var(--color-1);
+    background-color: var(--color-2);
 }
 
 .ss-go-top svg {
