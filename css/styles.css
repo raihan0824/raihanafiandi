@@ -2055,7 +2055,7 @@ img,
     display: none;
 }
 
-#loader {
+/* #loader {
     width: var(--vspace-1_5);
     height: var(--vspace-1_5);
     padding: 0;
@@ -2074,7 +2074,7 @@ img,
     border-radius: 50%;
     width: var(--vspace-1_5);
     height: var(--vspace-1_5);
-}
+} */
 
 @-webkit-keyframes load {
     0% {
@@ -2108,11 +2108,11 @@ img,
     transition: all .6s .9s ease-in-out;
 }
 
-.ss-loaded #preloader #loader {
+/* .ss-loaded #preloader #loader {
     opacity: 0;
     -webkit-transition: opacity .6s ease-in-out;
     transition: opacity .6s ease-in-out;
-}
+} */
 
 
 /* ===================================================================
