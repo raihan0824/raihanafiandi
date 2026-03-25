@@ -81,9 +81,17 @@ export default function About() {
                     key={cert.name}
                     className="flex items-center gap-3 rounded-lg bg-surface-light border border-surface-lighter/50 p-4"
                   >
-                    <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent font-bold text-xs shrink-0">
-                      {cert.issuer[0]}
-                    </div>
+                    {cert.logo ? (
+                      <img
+                        src={`/raihanafiandi${cert.logo}`}
+                        alt={cert.issuer}
+                        className="w-10 h-10 rounded-lg object-contain shrink-0"
+                      />
+                    ) : (
+                      <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent font-bold text-xs shrink-0">
+                        {cert.issuer[0]}
+                      </div>
+                    )}
                     <div>
                       <h4 className="font-medium text-text text-sm">{cert.name}</h4>
                       <p className="text-xs text-text-muted">{cert.issuer} Certified Associate</p>

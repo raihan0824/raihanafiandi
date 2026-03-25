@@ -18,6 +18,7 @@ export interface Education {
 export interface Certification {
   name: string;
   issuer: string;
+  logo?: string;
 }
 
 export interface WorkExperience {
@@ -52,10 +53,12 @@ export const certifications: Certification[] = [
   {
     name: "AI Infrastructure and Operations",
     issuer: "NVIDIA",
+    logo: "/images/logos/nvidia.png",
   },
   {
     name: "Generative AI LLMs",
     issuer: "NVIDIA",
+    logo: "/images/logos/nvidia.png",
   },
 ];
 
