@@ -13,7 +13,7 @@ interface ChatRequest {
 
 const MAX_MESSAGES_PER_DAY = 10;
 const ALLOWED_ORIGINS = [
-  "https://raihanafiandi.github.io",
+  "https://raihan0824.github.io",
   "http://localhost:3000",
 ];
 
