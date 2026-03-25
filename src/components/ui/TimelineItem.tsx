@@ -60,9 +60,17 @@ function TimelineContent({
       }`}
     >
       <div className="flex items-center gap-3 mb-3">
-        <div className="w-10 h-10 rounded-lg bg-surface-lighter flex items-center justify-center text-primary font-bold text-sm">
-          {experience.company[0]}
-        </div>
+        {experience.logo ? (
+          <img
+            src={`/raihanafiandi${experience.logo}`}
+            alt={experience.company}
+            className="w-10 h-10 rounded-lg object-contain"
+          />
+        ) : (
+          <div className="w-10 h-10 rounded-lg bg-surface-lighter flex items-center justify-center text-primary font-bold text-sm">
+            {experience.company[0]}
+          </div>
+        )}
         <div>
           <h3 className="font-semibold text-text">{experience.role}</h3>
           <p className="text-sm text-primary-light">{experience.company}</p>
