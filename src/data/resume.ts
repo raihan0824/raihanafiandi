@@ -37,7 +37,7 @@ export const personalInfo: PersonalInfo = {
     "Building production-grade AI systems — from LLM infrastructure to intelligent agents.",
   email: "mraihanafiandi@gmail.com",
   location: "Jakarta, Indonesia",
-  languages: ["Bahasa Indonesia (native)", "English (TOEFL ITP: 580, IELTS: 6.5)"],
+  languages: ["Bahasa Indonesia (native)", "English"],
 };
 
 export const education: Education[] = [

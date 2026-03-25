@@ -51,7 +51,7 @@ export default function ChatPage() {
         </div>
       )}
 
-      <ChatWindow messages={messages} />
+      <ChatWindow messages={messages} onSuggestionClick={sendMessage} />
 
       <ChatInput
         onSend={sendMessage}

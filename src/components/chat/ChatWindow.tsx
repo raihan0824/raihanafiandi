@@ -7,9 +7,10 @@ import { RiRobot2Fill } from "react-icons/ri";
 
 interface ChatWindowProps {
   messages: ChatMessageType[];
+  onSuggestionClick?: (suggestion: string) => void;
 }
 
-export default function ChatWindow({ messages }: ChatWindowProps) {
+export default function ChatWindow({ messages, onSuggestionClick }: ChatWindowProps) {
   const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -37,12 +38,13 @@ export default function ChatWindow({ messages }: ChatWindowProps) {
                 "Tell me about DekaLLM",
                 "What tech stack does he use?",
               ].map((suggestion) => (
-                <span
+                <button
                   key={suggestion}
-                  className="text-xs px-3 py-2 rounded-lg bg-surface-light border border-surface-lighter/50 text-text-muted cursor-default"
+                  onClick={() => onSuggestionClick?.(suggestion)}
+                  className="text-xs px-3 py-2 rounded-lg bg-surface-light border border-surface-lighter/50 text-text-muted hover:border-accent/50 hover:text-accent transition-colors cursor-pointer"
                 >
                   {suggestion}
-                </span>
+                </button>
               ))}
             </div>
           </div>
