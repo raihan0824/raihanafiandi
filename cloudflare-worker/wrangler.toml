@@ -4,4 +4,4 @@ compatibility_date = "2024-01-01"
 
 [[kv_namespaces]]
 binding = "RATE_LIMITS"
-id = "your-kv-namespace-id"
+id = "9307bb5cac58424fbd6988b8ee9e7b9e"
