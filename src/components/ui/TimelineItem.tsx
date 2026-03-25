@@ -21,7 +21,7 @@ export default function TimelineItem({ experience, index, onViewMore }: Timeline
       className="relative grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-8"
     >
       {/* Left content / spacer */}
-      <div className={isLeft ? "md:text-right" : "hidden md:block"}>
+      <div className={isLeft ? "hidden md:block md:text-right" : "hidden md:block"}>
         {isLeft && <TimelineContent experience={experience} align="right" onViewMore={onViewMore} />}
       </div>
 
@@ -32,7 +32,7 @@ export default function TimelineItem({ experience, index, onViewMore }: Timeline
       </div>
 
       {/* Right content / spacer */}
-      <div className={!isLeft ? "" : "hidden md:block"}>
+      <div className={!isLeft ? "hidden md:block" : "hidden md:block"}>
         {!isLeft && <TimelineContent experience={experience} align="left" onViewMore={onViewMore} />}
       </div>
 
