@@ -1,0 +1,7 @@
+name = "raihan-chat-proxy"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "RATE_LIMITS"
+id = "your-kv-namespace-id"
