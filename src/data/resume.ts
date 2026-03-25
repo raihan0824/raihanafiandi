@@ -13,6 +13,7 @@ export interface Education {
   degree: string;
   period: string;
   note?: string;
+  logo?: string;
 }
 
 export interface Certification {
@@ -46,6 +47,7 @@ export const education: Education[] = [
     institution: "Bandung Institute of Technology (ITB)",
     degree: "BSc Mathematics",
     period: "2017 – 2021",
+    logo: "/images/logos/itb.png",
   },
 ];
 

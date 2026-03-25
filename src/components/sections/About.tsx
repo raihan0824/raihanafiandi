@@ -54,8 +54,20 @@ export default function About() {
                 {education.map((edu) => (
                   <div
                     key={edu.institution}
-                    className="rounded-lg bg-surface-light border border-surface-lighter/50 p-4"
+                    className="flex items-center gap-3 rounded-lg bg-surface-light border border-surface-lighter/50 p-4"
                   >
+                    {edu.logo ? (
+                      <img
+                        src={`/raihanafiandi${edu.logo}`}
+                        alt={edu.institution}
+                        className="w-10 h-10 rounded-lg object-contain shrink-0"
+                      />
+                    ) : (
+                      <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent font-bold text-xs shrink-0">
+                        {edu.institution[0]}
+                      </div>
+                    )}
+                    <div>
                     <h4 className="font-medium text-text">{edu.degree}</h4>
                     <p className="text-sm text-primary-light">{edu.institution}</p>
                     <p className="text-xs text-text-muted mt-1">{edu.period}</p>
@@ -64,6 +76,7 @@ export default function About() {
                         {edu.note}
                       </span>
                     )}
+                    </div>
                   </div>
                 ))}
               </div>
