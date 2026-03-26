@@ -6,8 +6,12 @@ compatibility_date = "2024-01-01"
 binding = "RATE_LIMITS"
 id = "9307bb5cac58424fbd6988b8ee9e7b9e"
 
+[vars]
+BASE_URL = "https://openrouter.ai/api/v1"
+MODEL = "x-ai/grok-4.1-fast"
+
 [observability]
-enabled = false
+enabled = true
 head_sampling_rate = 1
 
 [observability.logs]
