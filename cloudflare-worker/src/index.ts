@@ -47,6 +47,8 @@ export default {
       const body: ChatRequest = await request.json();
       const { messages, fingerprint } = body;
 
+      console.log(JSON.stringify({ fingerprint, messages, timestamp: new Date().toISOString() }));
+
       if (!messages?.length || !fingerprint) {
         return new Response(
           JSON.stringify({ error: "Invalid request" }),
